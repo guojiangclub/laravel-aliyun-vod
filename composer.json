@@ -1,0 +1,45 @@
+{
+  "name": "ibrand/laravel-aliyun-vod",
+  "type": "library",
+  "description": "iBrand aliyun vod.",
+  "keywords": [
+    "iBrand",
+    "aliyun",
+    "vod"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "shjchen",
+      "email": "ibrand.shjchen@foxmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "alibabacloud/sdk": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "~3.5",
+    "orchestra/database": "~3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "iBrand\\Aliyun\\Vod\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "iBrand\\Aliyun\\Vod\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "iBrand\\Aliyun\\Vod\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
