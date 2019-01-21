@@ -58,6 +58,10 @@ class AliyunVod
             if (!empty($storageLocation)) {
                 $request->withStorageLocation($storageLocation);
             }
+
+            if (!empty($sortBy)) {
+                $request->withSortBy($sortBy);
+            }
             $request->withPageNo($pageNo);
 
             $request->withPageSize($pageSize);
@@ -365,7 +369,6 @@ class AliyunVod
             return ['errorMessage' => $e->getMessage()];
         }
     }
-
 
 
 }
